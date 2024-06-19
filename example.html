@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+<style>
+body {
+	background-color: #ffffff;
+	color: #000000;
+}
+#output {
+	background-color: #ffffff;
+	color: #000000;
+}
+</style>
+</head>
+<body>
+<div id='output'>Click here to invert the colour of elements, and text. They must be defined with RGB, or compatible HEX values.</div>
+<script src="function.js"></script>
+<script>
+document.querySelector("#output").addEventListener("click", function() {
+    const element = document.querySelector("#output");
+    if (element) {
+        invertColors();
+    }
+});
+</script>
+</body>
+</html>
